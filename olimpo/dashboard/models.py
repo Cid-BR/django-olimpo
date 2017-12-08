@@ -8,6 +8,8 @@ class Entradas(models.Model):
     data = models.DateTimeField(max_length=30)
     CreateAt = models.DateTimeField(auto_now_add=True)
     UpdateAt = models.DateTimeField(auto_now=True)
+    def __str__(self):
+        return self.descricao
 
 class Saidas(models.Model):
     descricao = models.CharField(max_length=100)
@@ -15,3 +17,6 @@ class Saidas(models.Model):
     data = models.DateTimeField(max_length=30)
     CreateAt = models.DateTimeField(auto_now_add=True)
     UpdateAt = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.descricao

@@ -3,5 +3,11 @@ from olimpo.dashboard.models import Entradas, Saidas
 
 # Register your models here.
 
-admin.site.register(Entradas)
-admin.site.register(Saidas)
+
+@admin.register(Entradas)
+class EntradasAdmin(admin.ModelAdmin):
+    list_display = ('descricao','data', 'valor')
+
+@admin.register(Saidas)
+class SaidasAdmin(admin.ModelAdmin):
+    list_display = ('descricao','data', 'valor')
