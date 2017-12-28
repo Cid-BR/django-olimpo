@@ -1,36 +1,55 @@
 # django-olimpo
-Estou Refazendo o sistema financeiro olimpo agora com django 2.0.
+## Não esta funcionando nada, não há garantias
+Sistema Financeiro simples em django para uso pessoal,
 
-#para instalar
+ele roda localmente um servidor python para uso em desenvolvimento.
+
+Para rodalo na inicialização do seu computador use esse tutorial para deploy na sua maquina:
+[Deploy + guinicor + postgres + nginx](https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-16-04)
+
+*não e necessario usar postgress inicialmente, mas e aconselhado
+
+#para instalar ambinete
 clone o repositorio:
-'''
+```
 git clone https://github.com/Perceu/django-olimpo.git
-'''
+```
 
 entre na pasta: 
-'''
+```
 cd django-olimpo
-'''
+```
 
 Crie uma virtualenv usando python3
-'''
+```
 python -m venv .olimpo
+```
+
+Ative a Virutual Env
+```
 source .olimpo/bin/activate
+```
+
+Instale as dependencias
+```
 pip install -r requirements.txt
-'''
+```
 
+#para instalar sistema
 Rode as migrações:
-'''
+```
 python manage.py migrate
-'''
+```
 
-para rodar:
-'''
+Rode o comando:
+```
 python manage.py runserver
-'''
+```
 
-*
-usar o 127.0.0.1:8000/admin/ por equanto
+Para acessar o va no seu navegador e acesse:
+```
+127.0.0.1:8000/
+```
 
 
 Para contribuir/fazer pedidos/ajustes/reportar bugs/ 
