@@ -7,9 +7,9 @@ ele roda localmente um servidor python para uso em desenvolvimento.
 Para rodalo na inicialização do seu computador use esse tutorial para deploy na sua maquina:
 [Deploy + guinicor + postgres + nginx](https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-16-04)
 
-*não e necessario usar postgress inicialmente, mas e aconselhado
+* não e necessario usar postgress inicialmente, mas e aconselhado
 
-#para instalar ambinete
+# Para instalar ambinete
 clone o repositorio:
 ```
 git clone https://github.com/Perceu/django-olimpo.git
@@ -35,7 +35,7 @@ Instale as dependencias
 pip install -r requirements.txt
 ```
 
-#para instalar sistema
+# Para instalar sistema
 Rode as migrações:
 ```
 python manage.py migrate
@@ -52,7 +52,9 @@ Para acessar o va no seu navegador e acesse:
 ```
 
 
-Para contribuir/fazer pedidos/ajustes/reportar bugs/ 
+
+# Para contribuir/fazer pedidos/ajustes/reportar bugs/ 
+
 favor colocar no assunto [django-olimpo]
 perceubertoletti@gmail.com
 
