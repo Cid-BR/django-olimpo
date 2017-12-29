@@ -17,12 +17,13 @@ from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth.views import login, logout_then_login
 from django.contrib.auth.decorators import login_required
-from olimpo.dashboard.views import home
+from olimpo.dashboard.views import home, signup
 
 
 urlpatterns = [
-    path('', login_required(home)),
+    path('', login_required(home), name="home"),
     path('admin', admin.site.urls),
     path('login', login, {'template_name':'login.html'}, name='login'),
     path('logout', logout_then_login, name='logout'),
+    path('signup', signup, name='signup'),
 ]

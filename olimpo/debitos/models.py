@@ -8,6 +8,6 @@ class Debitos(models.Model):
     data = models.DateTimeField(max_length=30)
     CreateAt = models.DateTimeField(auto_now_add=True)
     UpdateAt = models.DateTimeField(auto_now=True)
-    Entidade = models.ForeignKey(Entidade)
+    
     def __str__(self):
         return self.descricao
