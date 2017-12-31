@@ -1,5 +1,5 @@
 from django.db import models
-from entidades.models import Entidade
+
 
 
 # Create your models here.

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'olimpo.dashboard',
     'olimpo.frontend',
+    'olimpo.creditos',
 ]
 
 MIDDLEWARE = [
